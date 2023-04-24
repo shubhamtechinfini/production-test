@@ -12,6 +12,7 @@ export interface CartState {
 const initialState: CartState = {
   cartItems: [],
 };
+const checkbug = "test";
 
 export const cartSlice = createSlice({
   name: "cart",
