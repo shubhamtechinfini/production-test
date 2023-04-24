@@ -34,11 +34,11 @@ export const cartSlice = createSlice({
       const cartItem = state.cartItems.find(
         (el) => el.product.id === action.payload.id
       );
-      if (cartItem) {
-        cartItem.qty--;
-        if (cartItem.qty === 0) {
-          state.cartItems = state.cartItems.filter(
-            (el) => el.product.id !== action.payload.id
+      // if (cartItem) {
+      //   cartItem.qty--;
+      //   if (cartItem.qty === 0) {
+      //     state.cartItems = state.cartItems.filter(
+      //       (el) => el.product.id !== action.payload.id
           );
         }
       }
